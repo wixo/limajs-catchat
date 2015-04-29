@@ -11,13 +11,28 @@
 		<h1>#LimaJS cat-chat</h1>
 
 		<div class="chat-room-holder">
+			<div class="nick-holder">
+				<form class="nick-form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="nick" placeholder="Nickname">
+					</div>
+				</form>
+			</div>
 			<div class="messages-holder js-messages-holder"></div>
-			<div class="new-message-holder"></div>
+			<div class="new-message-holder">
+				<form class="new-message-form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="message" placeholder="Mensaje">
+					</div>
+					<button type="button" class="btn btn-warning">Enviar</button>
+				</form>
+			</div>
 		</div>
 	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 	<script src="//cdn.jsdelivr.net/pouchdb/3.4.0/pouchdb.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment-with-locales.min.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>

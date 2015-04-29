@@ -14,8 +14,22 @@ body,html {
 	height: 400px;
 	padding: 20px;
 }
-.message {
+.message-holder {
 	font-size: 14px;
+}
+.message-part {
+	display: inline-block;
+	padding: 0 10px;
+}
+.message-author {
+	text-align: right;
+	width: 20%;
+}
+.message-content {
+	width: 60%;
+}
+.message-date {
+	width: 19%;
 }
 .new-message-holder {
 	background: #333;
