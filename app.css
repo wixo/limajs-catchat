@@ -13,6 +13,7 @@ body,html {
 	background: white;
 	height: 400px;
 	padding: 20px;
+	overflow: scroll;
 }
 .message-holder {
 	font-size: 14px;
@@ -33,5 +34,6 @@ body,html {
 }
 .new-message-holder {
 	background: #333;
-	height: 20px;
+	height: 40px;
+	padding: 3px 0;
 }

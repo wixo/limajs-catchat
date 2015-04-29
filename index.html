@@ -20,11 +20,14 @@
 			</div>
 			<div class="messages-holder js-messages-holder"></div>
 			<div class="new-message-holder">
-				<form class="new-message-form">
+				<form class="new-message-form js-new-message-form">
 					<div class="form-group">
 						<input type="text" class="form-control js-message" id="message" placeholder="Mensaje">
 					</div>
-					<button type="button" class="js-submit-btn btn btn-warning">Enviar</button>
+					<button type="submit" class="js-submit-btn btn btn-warning">Enviar</button>
+					<div class="checkbox">
+						<label><input class="cat-checkbox js-cat-checkbox" type="checkbox" value="">Es un gato</label>
+					</div>
 				</form>
 				<p class="status-message js-status-message"></p>
 			</div>
