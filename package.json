@@ -1,0 +1,15 @@
+{
+  "name": "limajs-catchat",
+  "version": "0.0.1",
+  "description": "a client for the limajs-chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@wxo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "gzippo": "^0.2.0"
+  }
+}
