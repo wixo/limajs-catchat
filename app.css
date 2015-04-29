@@ -1,0 +1,19 @@
+body,html {
+	background: #4C6A8D;
+	height: 100%;
+}
+.app-container {
+	background: #0C9DA9;
+	height: 100%;
+}
+.chat-room-holder {
+	padding: 20px 0;
+}
+.messages-holder {
+	background: white;
+	height: 400px;
+}
+.new-message-holder {
+	background: #333;
+	height: 20px;
+}
