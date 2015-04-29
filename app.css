@@ -12,6 +12,10 @@ body,html {
 .messages-holder {
 	background: white;
 	height: 400px;
+	padding: 20px;
+}
+.message {
+	font-size: 14px;
 }
 .new-message-holder {
 	background: #333;
