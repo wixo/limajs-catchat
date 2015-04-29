@@ -10,6 +10,7 @@ $( function () {
 	  , buildMessageAuthor
 	  , buildMessageContent
 	  , buildMessageDate
+	  , sendMessage
 	  ;
 
 	moment.locale('es-ES');
@@ -51,6 +52,36 @@ $( function () {
 
 		messages.forEach( buildMessageHolder );
 	};
+
+	sendMessage = function () {
+		var $nickname   = $('input.js-nickname')
+		  , $message    = $('input.js-message')
+		  , messageData = {}
+		  ;
+
+		if ( $nickname.val() !== '' && $message.val() !== '' ) {
+
+			messageData._id     = new Date().toISOString();
+			messageData.author  = $nickname.val();
+			messageData.message = { content: $message.val(), date: new Date() };
+
+			db.put( messageData )
+			.then( function ( result ) {
+
+				$('p.js-status-message').text( 'Mensaje enviado!' );
+			} )
+			.catch( function ( error ) {
+
+				console.log( 'Hubo un error', error, error.stack );
+			} );
+		} else {
+
+			$('p.js-status-message').text( 'Hay campos vacios!' );
+		}
+
+	};
+
+	$('button.js-submit-btn').on('click', sendMessage );
 
 	db.allDocs( { include_docs: true } )
 	.then( function ( result ) {
