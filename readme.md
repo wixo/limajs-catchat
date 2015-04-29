@@ -16,3 +16,6 @@ git checkout step-06
 ```
 
 or master for the final form
+
+### oversight
+node_modules pushed because I can't rely on location's wifi
