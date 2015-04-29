@@ -4,3 +4,5 @@ var app     = express();
 
 app.use(gzippo.staticGzip("" + __dirname + "/"));
 app.listen(process.env.PORT || 5000);
+
+console.log( 'Listening on port:', process.env.PORT || 5000 );
